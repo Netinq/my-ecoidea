@@ -1,0 +1,67 @@
+.debug {border: 1px solid black;}
+
+*, *:focus,*:hover {outline: none;}
+
+textarea {
+  resize: none;
+}
+
+.form {
+  position: absolute;
+
+  left: 20vw;
+  width: 60vw;
+  height: auto;
+
+  box-sizing: border-box;
+  padding: 3vh;
+  margin: 5vh;
+
+  font-size: 1.1em;
+
+  text-align: center;
+  border-radius: 10px;
+}
+
+.form:hover {
+  box-shadow: var(--shdw-01);
+}
+
+
+
+.form textarea, .form input {
+  width: 50vw;
+  margin: 1vh;
+
+  font-size: 1.1em;
+  color: #333;
+  font-family: Arial;
+
+  padding: 1vh;
+
+  outline: none;
+  border-radius: 5px;
+  border: var(--border-01);
+
+}
+.form textarea:focus, .form input:focus {
+  border: var(--border-01f);
+}
+
+.form input[name^="keyword"] {
+  width: calc(30vw / 3 );
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.form input[type="submit"] {
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: var(--blue);
+  color: white;
+  border: none;
+}
+.form input[type="submit"]:hover {
+  box-shadow: var(--shdw-btn);
+}

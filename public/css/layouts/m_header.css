@@ -1,0 +1,152 @@
+:root
+{
+  --green : #35BF54;
+  --green-02 : #237F38;
+  --green-03 : #2b8c43;
+  --gray : #707070;
+  --white : #ffffff;
+
+  --header-h: 60px;
+  --pos-round: calc( ( var(--header-h) / 2 ) - ( var(--header-h) / 20 ) ); /* Ratio qui donne 4.5vh pour 10vh  --  Pour le search et connect*/
+    --pos-logo: calc( var(--header-h) / 10 );
+
+  color : var(--gray);
+  background-color : var(--white);
+
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: none;
+
+  font-family: Arial;
+}
+a, a:hover, a:active, a:visited { text-decoration: none; color: inherit;}
+
+header a {
+  top: 0;
+
+  height: var(--header-h);
+
+  font-family: Arial;
+  font-size: 100%;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: var(--header-h);
+  letter-spacing: normal;
+  text-align: left;
+  transition: all 0.5s;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+}
+
+header {
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: var(--header-h);
+
+
+  background: var(--white);
+
+  transition: all 0.5s;
+  box-shadow: #eee 0px 5px 10px;
+
+  position: fixed;
+  z-index: 10;
+}
+header:hover
+{
+  box-shadow: #ccc 0px 5px 10px;
+}
+
+header span 
+{
+	position: absolute;
+	float: left;
+}
+
+header #logo {
+  display: none;
+}
+
+header #myecoidea {
+  display:none;
+}
+
+#menu {
+  position: absolute;
+  left: 0;
+  width: 60vw;
+  height: var(--header-h);
+}
+
+header a {
+  float: right;
+}
+
+header #home
+{
+	left: 0;
+	width:50%;
+	text-align: center;
+}
+
+header #idea {
+  width: 50%;
+  right: 0;
+	text-align: center;
+}
+
+header #login {
+  text-align: center;
+  font-size: 80%;
+  width: 20vw;
+  padding-right: 10px;
+}
+header #logout
+{
+  width: 20vw;
+	background-color: var(--white);
+  z-index: 100000;
+  text-align: center;
+}
+
+header #bar
+{
+    position: absolute;
+    height: 0.3vh;
+    background: var(--green);
+}
+
+.ligth
+{
+
+  box-sizing: border-box;
+  color: var(--gray);
+}
+
+.light:hover,.light:active
+{
+    color: white;
+    box-shadow: #777 0px 0px 10px;
+    background: var(--green);
+}
+.mobile-nav .left
+{
+	position: absolute;
+	float: none;
+}
+
+header #search-box
+{
+	display: none;
+}

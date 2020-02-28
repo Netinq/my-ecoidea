@@ -1,0 +1,116 @@
+.disable {
+  display: none;
+}
+
+.main {
+  position: absolute;
+
+  min-height: 60vh;
+  width: 30vw;
+  top: 20vh;
+  left: calc( ( 100vw - 30vw ) / 2 );
+
+  transition: 0.4s;
+  border-radius: 10px;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding: 3vh;
+  display:grid;
+}
+
+.main:hover {
+  box-shadow: #aaa 0px 0px 10px;
+}
+
+.feed input {
+  box-sizing: border-box;
+  position: relative;
+}
+*:focus {
+  outline: none;
+}
+
+
+.flow {
+  width: 20vw;
+  height: 6.5vh;
+
+  font-size: 2vmin;
+
+  margin-top: 2.5vh;
+
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+
+  background: none;
+
+  border: none;
+  border-bottom: 1px solid #aaa;
+
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.4s;
+  font-family: 'Roboto', sans-serif;
+}
+.flow:hover {
+  border-bottom: 2px solid var(--green);
+  color: var(--green);
+}
+
+.button, .button:hover {
+  border: none;
+}
+
+.empty {
+  border-bottom:  2px solid var(--red);
+}
+.valid {
+  border-bottom:  2px solid var(--green);
+}
+
+.err {
+  margin-top: 0.5vh;
+  color: var(--red);
+  font-size: 1em;
+}
+span {
+  margin-top: 1vh;
+}
+
+
+#reset-password input[type="password"] {
+  display: none;
+}
+
+#reset-password:hover > input[type="password"] {
+  display: inline;
+}
+
+#save {
+  width: 10vw;
+
+}
+#save:hover {
+  border-bottom:  2px solid var(--blue);
+  color: var(--blue);
+}
+
+.action {
+  margin-top: 50px;
+}
+.action a, .action a:hover {
+  border: none;
+}
+
+.light {
+  background: none;
+  padding: 10px;
+  border-radius: 7px;
+  border: var(--border-01);
+}

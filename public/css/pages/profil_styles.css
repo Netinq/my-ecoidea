@@ -1,0 +1,253 @@
+.disable {
+    display: none;
+}
+
+.main a {
+    border-bottom: 1px solid #aaa;
+}
+.main a:hover {
+    border-bottom: 1px solid var(--green);
+    color: black;
+}
+
+h2 {  text-align: center;}
+
+@media (min-width: 640px) {
+    .main {
+        position: absolute;
+    
+        min-height: 60vh;
+        width: 30vw;
+        top: 15vh;
+        left: calc( ( 100vw - 30vw ) / 2 );
+    
+        transition: 0.4s;
+        border-radius: 10px;
+    
+        align-items: center;
+        justify-content: center;
+        padding: 3vh;
+        margin-bottom: 50px;
+        box-shadow: #ddd 0px 0px 10px;
+    }
+    
+    .main:hover {
+        box-shadow: #aaa 0px 0px 10px;
+    }
+    
+    
+    
+    
+    .feed {
+        display:grid;
+    }
+    
+    .feed input {
+        box-sizing: border-box;
+        position: relative;
+    
+    
+        top: 0vh;
+        left: calc( (30vw - 20vw ) / 2 );
+    
+    }
+    input:focus {
+        outline: none;
+    }
+    
+    
+    .flow {
+        width: 20vw;
+        height: 6.5vh;
+    
+        font-size: 2vmin;
+    
+        margin-top: 2.5vh;
+    
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    
+        background: none;
+    
+        border: none;
+        border-bottom: 1px solid #aaa;
+    
+        align-items: center;
+        justify-content: center;
+    
+        transition: 0.4s;
+        font-family: 'Roboto', sans-serif;
+    }
+    .flow:hover {
+        border-bottom: 2px solid var(--green);
+        color: var(--green);
+    }
+    
+    .button, .button:hover {
+        border: none;
+    }
+    
+    .empty {
+        border-bottom:  2px solid var(--red);
+    }
+    .valid {
+        border-bottom:  2px solid var(--green);
+    }
+    
+    .err {
+        margin-top: 0.5vh;
+        color: var(--red);
+        font-size: 1em;
+    }
+    span {
+        margin-top: 1vh;
+    }
+    
+    
+    label, img {
+        text-align: center;
+        padding: 0;
+        justify-self: center;
+    }
+    
+    
+    #reset-password input[type="password"] {
+        height: 0;
+        padding: 0;
+        border: none;
+    }
+    
+    #reset-password:hover > input[type="password"] {
+        height: 6.5vh;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    
+        border-bottom: 1px solid #aaa;
+    }
+    
+    #save {
+        width: 10vw;
+        margin-left: 5vw;
+    
+    }
+    #save:hover {
+        border-bottom:  2px solid var(--blue);
+        color: var(--blue);
+    }
+
+}
+
+
+
+/* mobile */
+@media (max-width: 640px) {
+    .main {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .feed {
+        display:grid;
+    }
+    
+    .feed input {
+        box-sizing: border-box;
+        position: relative;
+    
+        top: 0vh;    
+    }
+    input:focus {
+        outline: none;
+    }
+    
+    
+    .flow {
+        width: 80vw;
+    
+        font-size: 1em;
+    
+        margin-top: 2.5vh;
+    
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+        background: none;
+    
+        border: none;
+        border-bottom: 1px solid #aaa;
+    
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+    
+        transition: 0.4s;
+        font-family: 'Roboto', sans-serif;
+    }
+    .flow:hover {
+        border-bottom: 2px solid var(--green);
+        color: var(--green);
+    }
+    
+    .button, .button:hover {
+        border: none;
+    }
+    
+    .empty {
+        border-bottom:  2px solid var(--red);
+    }
+    .valid {
+        border-bottom:  2px solid var(--green);
+    }
+    
+    .err {
+        margin-top: 0.5vh;
+        color: var(--red);
+        font-size: 1em;
+    }
+    span {
+        margin-top: 1vh;
+    }
+    
+    
+    label, img {
+        text-align: center;
+        padding: 0;
+        padding-top: 10px;
+        justify-self: center;
+    }
+    
+    
+    #reset-password input[type="password"] {
+        height: 0;
+        padding: 0;
+        border: none;
+    }
+    
+    #reset-password:hover > input[type="password"] {
+        font-size: 1em;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+        border-bottom: 1px solid #aaa;
+    }
+    
+    #save {
+        margin-top: 40px;
+        width: 80vw;
+    
+    }
+    #save:hover {
+        border-bottom:  2px solid var(--blue);
+        color: var(--blue);
+    }
+}

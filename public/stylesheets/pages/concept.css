@@ -1,0 +1,141 @@
+:root
+{
+  --green : #35BF54;
+  --green-02 : #237F38;
+  --green-03 : #2b8c43;
+  --gray : #707070;
+  --white : #ffffff;
+  --blue: #63a4ff;
+  --blue-01 : #36a5f9;
+  --red : #ce1c1c;
+
+  --shadow-defaut: #eee 0px 5px 10px;
+  --shadow-defaut-hover: #ccc 0px 5px 10px;
+
+  color : var(--gray);
+  background-color : var(--white);
+
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: none;
+  box-sizing: border-box;
+
+  font-family: Arial;
+  overflow-x: hidden;
+}
+
+.box
+{
+  position: relative;
+  width: auto;
+  height: 35vh;
+  box-shadow: var(--shadow-defaut);
+  background-color: var(--white);
+
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.box:hover
+{
+  box-shadow: var(--shadow-defaut-hover);
+}
+.feuille
+{
+  position: absolute;
+  width: 50px;
+  margin-left: calc(50vw - 5vw + 20px);
+}
+.f2
+{
+  margin-top: 50vh; 
+  transform: rotate(-90deg);
+  margin-left: calc(50vw - 5vw - 65px);
+}
+.f3
+{
+  margin-top: 100vh;
+  margin-left: calc(50vw - 5vw + 20px);
+}
+.f4
+{
+  margin-top: 150vh; 
+  transform: rotate(-90deg);
+  margin-left: calc(50vw - 5vw - 65px);
+}
+.content-right 
+{
+  margin: 50px;
+  float: right;
+  width: 45vw;
+  text-align: left;
+}
+.content-left 
+{
+  margin: 50px;
+  float: left;
+  width: 45vw;
+  text-align: right;
+}
+.plante
+{
+  position: absolute;
+  height: 50vh;
+  width: 10px;
+  background: var(--green);
+
+  margin-left: calc(50vw - 5vw - 5px);
+  z-index: -10;
+  transform: skew(-10deg);
+}
+.plante_rervese
+{
+  position: absolute;
+  height: 50vh;
+  width: 10px;
+  background: var(--green);
+
+  margin-left: calc(50vw - 5vw - 5px);
+  z-index: -10;
+  transform: skew(10deg);
+}
+.p1
+{
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 1px;
+}
+.p2 
+{ 
+  border-bottom-right-radius: 1px;
+  border-top-left-radius: 1px;
+  margin-top: 50vh; 
+}
+.p3 
+{ 
+  border-top-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+  margin-top: 100vh; 
+}
+.p4 
+{ 
+  border-bottom-right-radius: 1px;
+  border-top-left-radius: 1px;
+  margin-top: 150vh; 
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.projet-informations i
+{
+  color: var(--green);
+  font-weight: bold;
+  font-style: normal;
+}
+.projet-informations
+{
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: auto;
+}

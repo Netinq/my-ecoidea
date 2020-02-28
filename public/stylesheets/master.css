@@ -1,0 +1,180 @@
+/*
+########################
+#    My-EcoIdea.org    #
+#      master.css      #
+########################
+
+Bienvenue petit curieux !
+Tu comprends quelque chose la-dedans ?
+En tout cas, on cherche des gens comme toi !
+
+Contacte-nous sur twitter/instagram @my_ecoidea ou discord https://discord.gg/uBG8ErA
+*/
+
+:root
+{
+  /* Declaration des couleurs */
+  --green : #35BF54;
+  --green-02 : #237F38;
+  --gray : #707070;
+  --white : #ffffff;
+  --blue: #63a4ff;
+  --blue-01 : #36a5f9;
+  --red: #d11d1d;
+
+  /* Declaration des ombres */
+  --shdw-btn-li: #bbb 0px 3px 10px ;  /*Bouton light*/
+  --shdw-btn: #999 0px 3px 10px ;     /*Bouton*/
+  --shdw-btn-hov: #777 0px 4px 10px;  /*Bouton hover*/
+  --shdw-df: #ccc 0px 5px 10px;       /*Defaut*/
+  --shdw-df-hov: #aaa 0px 5px 10px;   /*Defaut hover*/
+  --shdw-df-bot: #ccc 0px -2.5px 10px;       /*Defaut*/
+  --shdw-df-bot-hov: #aaa 0px -2.5px 10px;   /*Defaut hover*/
+  --shdw-01: #aaa 0px 0px 10px;       /*Inconnu au bataillon*/
+  --shdw-idea: 0px 1px 10px #ccc;     /* Idea form*/
+  --shdw-idea-hov: 0px 1px 14px #777; /* Idea form hover */
+
+  /* Declaration des bordures */
+  --border-01: #ccc 1px solid;
+  --border-01f: #666 1px solid;
+  --border-01-blue: var(--blue) 1px solid;
+  --border-02-blue: var(--blue) 2px solid;
+
+  /* Couleurs par defaut */
+  color : var(--gray);
+  background-color : var(--white);
+
+  /* Remise à zero de toutes les positions */
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: none;
+
+  /* Selection de la police d'ecriture */
+  font-family: Arial;
+  /* Ajustement de la taille des box */
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+}
+
+body
+{
+  min-width: 100%;
+  margin: 0;
+}
+
+* {
+  transition: .5s;
+}
+*:focus {
+  outline: none;
+}
+
+a, a:hover, a:active, a:visited
+{
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+main
+{
+  margin-top: calc(8vh + 50px);
+  margin-right: 0;
+  margin-left: 0;
+
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  height: auto;
+  min-height: 85vh;
+  width: 90vw;
+}
+h1
+{
+  width: 35%;
+
+  color: var(--gray);
+  border-bottom: 5px solid var(--green);
+}
+
+.top
+{
+  top: 0;
+}
+.bottom
+{
+  bottom: 0;
+}
+.full-w
+{
+  left: 0;
+  width: 100vw;
+}
+
+.xcenter
+{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.ycenter
+{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.center
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered
+{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.ic.little
+{
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+
+.ic.medium
+{
+  height: 30px;
+  width: 30px;
+  margin: 7.5px;
+}
+
+.ic.large
+{ /*à retravailler */
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+.ic.big
+{ /*à retravailler */
+  height: 50px;
+  width: 50px;
+  margin: 12.5px;
+}
+
+.ic#heart, .ic#heart-fill
+{
+  color: red;
+}
+
+.popup {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+}

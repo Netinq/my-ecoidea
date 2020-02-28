@@ -1,0 +1,262 @@
+/*
+########################
+#    My-EcoIdea.org    #
+#      header.css      #
+########################
+
+Tu viens visiter notre css ?
+(pique nous pas trop de nos merveilleuses idées)
+*/
+:root {
+    --header-h: 11vh;
+    --pos-round: calc( ( var(--header-h) / 2 ) - ( var(--header-h) / 20 ) ); /* Ratio qui donne 4.5vh pour 10vh  --  Pour le search et connect*/
+    --pos-logo: calc( var(--header-h) / 10 );
+}
+
+header
+{
+  position: fixed;
+  left: 0;
+
+  height: var(--header-h);
+  z-index: 10;
+
+  background: var(--white);
+  box-shadow: var(--shdw-df);
+
+  transition: all 0.5s;
+}
+
+header:hover
+{
+  box-shadow: var(--shdw-df-hov);
+}
+
+header a,header a:hover,header a:active,header a:visited
+{
+  color: inherit;
+}
+
+header a
+{
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  padding: 0;
+
+  border: none;
+
+  font-family: Arial;
+  font-size: 1.7em;
+  font-style: normal;
+  font-stretch: normal;
+
+  line-height: var(--header-h);
+  letter-spacing: normal;
+  text-align: left;
+
+  transition: all 0.5s;
+  z-index: 100;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.light
+{
+  padding-left: 2.5vh;
+  padding-right: 2.5vh;
+
+  transition: all .5s ease-out;
+}
+
+
+.light:hover
+{
+  color: white;
+
+  box-shadow: #777 0px 0px 10px;
+  background: var(--green);
+}
+
+header #logo
+{
+  position: relative;
+  top: var(--pos-logo);
+  left: var(--pos-logo);
+  margin-right: 1vw;
+
+  height: calc(var(--pos-logo) * 8);
+  width: calc(var(--pos-logo) * 8);
+
+  user-select: none;
+
+  background: white;
+  float: left;
+}
+
+header .to-down
+{
+  display: none;
+  top: calc(var(--header-h) * -1);
+}
+
+header .to-top {
+  top: calc( var(--header-h) / 5 );
+}
+
+header #myecoidea
+{
+  margin-top: 0;
+  margin-right: 1vw;
+  padding-right: 15px;
+
+
+  font-size: 1.7em;
+  font-family: 'Sriracha', cursive ;
+
+  line-height: var(--header-h);
+  color: var(--green);
+  cursor: pointer;
+  user-select: none;
+}
+
+header #arrow
+{
+  margin-top: 1.5vh;
+  padding-right: 15px;
+
+  font-size: 1.7em;
+
+  line-height: calc( var(--header-h) / 5 );
+  color: var(--green);
+  cursor: pointer;
+  user-select: none;
+  justify-content: center;
+  align-items:  center;
+  box-sizing: border-box;
+}
+
+#menu:hover > .light
+{
+  display: block;
+}
+
+
+.left
+{
+  position: relative;
+  float: left;
+}
+.right
+{
+  position: relative;
+  float: right;
+}
+
+header #idea:hover
+{
+  /* Je trouve pas ça top en bleu, mais bon*/
+  /* Mais si c'est joli ça change des autres boutons */
+  /*oké*/
+  background: var(--blue);
+}
+
+header .round
+{
+
+  margin-right: 2vw;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  height: var(--pos-round);
+
+  line-height: var(--pos-round);
+  font-size: 1.1em;
+  border-radius: 50px;
+  border: var(--border-01);
+}
+header #login:hover
+{
+  color: white;
+  background: var(--green);
+  box-shadow: var(--shdw-btn);
+  border: var(--green) 1px solid;
+}
+
+
+header #search-box
+{
+  transition: .5s;
+  padding: .5vh;
+}
+header #search-box:hover
+{
+  box-shadow: #999 0px 3px 10px;
+  border: white 1px solid;
+}
+header #search-box:hover > #search-txt
+{
+  padding: 0 15px;
+  min-width: 10vw;
+}
+
+header #search-txt
+{
+  top: 0;
+  width: 0;
+  transition: .5s;
+}
+header #search-box input
+{
+  margin: 0;
+
+  height: 100%;
+
+  font-size: 1.1em;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+header #search-btn
+{
+  display: flex;
+
+  width: var(--pos-round);
+  height: var(--pos-round);
+
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  transition: .5s;
+}
+header #search-btn svg
+{
+  height: calc( var(--pos-round) - 1.5vh);
+  width: calc( var(--pos-round) - 1.5vh);
+}
+
+header #bar
+{
+  position: absolute;
+  height: 0.3vh;
+  background: var(--green);
+}
+
+.icon
+{
+  height: 3.5vh;
+  width: 3.5vh;
+
+  justify-content: center;
+  align-items:  center;
+}

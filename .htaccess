@@ -1,0 +1,8 @@
+
+ErrorDocument 400 /resources/views/erreurs/erreur_400.php
+ErrorDocument 401 /resources/views/erreurs/erreur_401.php
+ErrorDocument 403 /resources/views/erreurs/erreur_403.php
+ErrorDocument 404 /resources/views/erreurs/erreur_404.php
+ErrorDocument 408 /resources/views/erreurs/erreur_408.php
+ErrorDocument 500 /resources/views/erreurs/erreur_500.php
+ErrorDocument 503 /resources/views/erreurs/erreur_503.php

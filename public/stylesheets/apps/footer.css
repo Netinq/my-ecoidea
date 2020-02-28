@@ -1,0 +1,32 @@
+footer
+{
+  position: relative;
+  margin-bottom: 0;
+  margin-left: 0;
+  width: 100%;
+  height: 75px;
+
+  background-color: #100;
+
+  transition: all 0.5s;
+  box-shadow: rgba(33, 33, 33, .25) 0px -5px 10px;
+  padding: 5px;
+}
+footer a,footer a:hover,footer a:active,footer a:visited
+{
+  color: var(--white);
+}
+footer i
+{
+	margin-left: 15px;
+	margin-right: 5px;
+  margin-top: 15px;
+	font-size: 50px;
+  float: left;
+}
+footer p
+{
+  line-height: 45px;
+  margin-bottom: 0;
+  font-size: 1.25em;
+}

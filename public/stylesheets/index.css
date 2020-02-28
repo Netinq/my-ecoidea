@@ -1,0 +1,50 @@
+.debug {border: 1px solid black;}
+
+.load
+{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#load_circle
+{
+  position: absolute;
+  top: calc(50vh - 50px);
+  left: calc(50vw - 50px);
+  border-top: 10px solid var(--green);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+}
+#load_circle_reverse
+{
+  position: absolute;
+  top: calc(50vh - 45px);
+  left: calc(50vw - 45px);
+  border-top: 10px solid rgba(220, 220, 220);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  animation: spin 1.25s linear infinite reverse;
+  z-index: -5;
+}
+#load_circle_2
+{
+  position: absolute;
+  top: calc(50vh - 47.5px);
+  left: calc(50vw - 47.5px);
+  border-top: 10px solid var(--gray);
+  border-radius: 50%;
+  width: 95px;
+  height: 95px;
+  animation: spin 1.5s linear infinite .5s;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

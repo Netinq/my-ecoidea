@@ -1,0 +1,269 @@
+.debug {border: 1px solid black;}
+
+.page-header
+{
+  height: 100px;
+}
+.page-header .search
+{
+  display: flex;
+  float: right;
+}
+.page-header #search_box
+{
+  border: 0;
+  height: 25px;
+  box-shadow: 1px 1px 2px rgba(100,100,100,.5);
+  padding: 5px;
+}
+.page-header #search_button
+{
+  border: 0;
+  background-color: var(--green);
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+  color: var(--white);
+  font-weight: bold;
+  box-shadow: 1px 1px 2px rgba(100,100,100,.5);
+}
+.page-header #search_button:hover
+{
+  background-color: var(--white);
+  color: var(--green);
+  border: solid 3px var(--green);
+}
+.page-header #search_select
+{
+  margin-left: 20px;
+  margin-top: 0;
+  line-height: 35px;
+}
+.page-header #search_selector
+{
+  margin-left: 5px;
+  line-height: 35px;
+
+}
+
+/* Ideas */
+
+#ideas-container {
+  margin-top: 2vh;
+  width: calc(100vw - (2*60px));
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.idea {
+
+  margin-right: 2vmin;
+  margin-bottom: 2vmin;
+  margin-top: 2vmin;
+  float: left;
+  height: 350px;
+  width: 300px;
+  box-shadow: #ccc 0px 1px 10px;
+  border-radius: 5px;
+  transition: .5s;
+  background-color: var(--white);
+}
+
+.idea:hover {
+  box-shadow: #777 0px 1px 14px;
+}
+
+.idea .header {
+  position: absolute;
+  margin: 10px;
+  height: 50px;
+  width: 280px;
+
+}
+
+.idea .header .authorLogo {
+  float: left;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.idea .header .authorName{
+  float: left;
+  margin: 1.5vh;
+  line-height: 2vh;
+}
+
+.idea .content {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 10px;
+  width: 280px;
+  height: 215px;
+
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.idea .content span {
+  background: rgba(200, 200, 200, 0.1);
+  font-style: oblique;
+}
+
+.idea .content:before {
+  content: ' ';
+  height: 20px;
+  width: 20px;
+  background-image: url(/public/images/quoteLeft.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: -5px;
+}
+
+.idea .content:after {
+  content: ' ';
+  height: 20px;
+  width: 20px;
+  background-image: url(/public/images/quoteRight.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+
+.idea .action {
+  position: absolute;
+  margin-top: calc(350px - 50px);
+  margin-left: 10px;
+  height: 45px;
+  width: 280px;
+
+  display: flex;
+}
+
+
+
+.button {
+  margin: 5px;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 110%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.idea .action .discover {
+  border: 2px solid var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
+}
+.idea .action .discover:hover
+{
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.idea .action .edit {
+  border: 2px solid var(--green);
+  background-color: var(--green);
+  color: var(--white);
+}
+.idea .action .edit:hover
+{
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.idea .action .delete {
+  border: 2px solid var(--red);
+  background-color: var(--red);
+  color: var(--white);
+}
+.idea .action .delete:hover
+{
+  background-color: var(--white);
+  color: var(--red);
+}
+
+
+
+.idea .action .like {
+  display: flex;
+}
+.idea .action .like input {
+  border: none;
+  background: none;
+  background-image: url(../images/heart.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  margin: 7.25px;
+
+  height: 30px;
+  width: 30px;
+}
+
+.idea .action .like p {
+  margin: 0px;
+  box-sizing: border-box;
+  line-height: 45px;
+  color: #fe0302;
+  cursor: pointer;
+}
+
+.idea button
+{
+  border: none;
+}
+.load_more
+{
+  margin-bottom: 100px;
+}
+.idea #load_more
+{
+  margin: 5px;
+
+  border: 2px solid #63a4ff;
+  border-radius: 5px;
+  height: 50px;
+  width: 290px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 110%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.idea #load_more:hover
+{
+  background-color: var(--white);
+  color: #63a4ff;
+}
+.idea #load_more_button
+{
+  margin-top: 125px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 100px;
+  width: 100px;
+  font-size: 75px;
+  background: none;
+  cursor: pointer;
+  color: var(--gray);
+  transition: 0.4s;
+}
+.idea #load_more_button:hover
+{
+  color: var(--green);
+    text-shadow: #bbb 0px 0px 10px;
+}
+.idea #load_more_button:active {
+  transform: rotate(360deg);
+}

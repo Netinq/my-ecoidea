@@ -1,0 +1,343 @@
+
+
+button[name="accept"], button[name="reject"], button[name="delete"] {
+    position: relative;
+    width: 120px;
+    margin: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 30px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    box-shadow: var(--shdw-idea);
+    color: white;
+}
+
+button[name="accept"]:hover, button[name="reject"]:hover
+{
+    box-shadow: var(--shdw-idea-hov);
+}
+
+button[name="accept"]{
+    background: #45d163;
+}
+
+button[name="reject"], button[name="delete"] {
+    background: #DD4B39;
+}
+
+
+
+@media (min-width: 640px) {
+    .share
+{
+    margin-bottom: 50px;
+}
+.share h3
+{
+    margin-left: 10px;
+}
+.share a
+{
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: var(--shdw-df);
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.share a:hover
+{
+    box-shadow: var(--shdw-df-hov);
+}
+.share #twitter
+{
+    background-color: #33CCFF;
+}
+.share #mail
+{
+    background-color: #DD4B39;
+}
+.share #facebook
+{
+    background-color: #3B5998;
+}
+
+
+
+
+
+.user-info
+{
+    float: right;
+}
+.user-info #user_name
+{
+    float: right;
+    padding-left: 10px;
+}
+.user-info #post_date
+{
+    margin: 0;
+    font-size: .75em;
+}
+
+.idea
+{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 25px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+
+    box-shadow: var(--shdw-idea);
+}
+
+.idea:hover
+{
+    box-shadow: var(--shdw-idea-hov);
+}
+.idea h3
+{
+    font-size: 2em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--green);
+    margin-top: 50px;
+}
+
+
+.idea_info {
+    display: flex;
+    align-items: center;
+}
+
+.idea_info i
+{
+    font-style: normal;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.idea_info #likes
+{
+    color: var(--red);
+    border-right: 2px solid var(--gray);
+    padding-right: 10px;
+}
+.idea_info #adhesions
+{
+    color: var(--blue);
+    padding-left: 10px;
+}
+
+.idea_content
+{
+    word-wrap:break-word;
+}
+#adherer
+{
+    height: 75px;
+    width: 150px;
+    font-size: 1.8em;
+    font-weight: bold;
+    border: var(--border-01);
+
+    color: var(--blue);
+    background: white;
+    box-shadow: none;
+
+    margin-bottom: 100px;
+
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+#adherer:hover
+{
+    color: var(--white);
+    background-color: var(--blue);
+    box-shadow: var(--shdw-btn);
+    border: none;
+}
+#adherer:active
+{
+    box-shadow: none;
+}
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+    .share
+{
+    margin-bottom: 50px;
+}
+.share h3
+{
+    margin-left: 10px;
+}
+.share a
+{
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: var(--shdw-df);
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.share a:hover
+{
+    box-shadow: var(--shdw-df-hov);
+}
+.share #twitter
+{
+    background-color: #33CCFF;
+}
+.share #mail
+{
+    background-color: #DD4B39;
+}
+.share #facebook
+{
+    background-color: #3B5998;
+}
+
+button[name="accept"], button[name="reject"] {
+    width: 120px;
+    margin: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 30px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    box-shadow: var(--shdw-idea);
+    color: white;
+}
+
+button[name="accept"]:hover, button[name="reject"]:hover
+{
+    box-shadow: var(--shdw-idea-hov);
+}
+
+button[name="accept"]{
+    background: #45d163;
+}
+
+button[name="reject"] {
+    background: #DD4B39;
+}
+
+
+
+
+.user-info
+{
+    float: right;
+}
+.user-info #user_name
+{
+    float: right;
+    padding-left: 10px;
+}
+.user-info #post_date
+{
+    margin: 0;
+    font-size: .75em;
+}
+
+.idea
+{
+    margin-top: 20px;
+    padding: 15px;
+}
+.idea h3
+{
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--green);
+    margin-top: 50px;
+}
+
+.idea img {
+    max-width: 100%;
+}
+
+
+.idea_info {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.idea_info i
+{
+    font-style: normal;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.idea_info #likes
+{
+    color: var(--red);
+    border-right: 2px solid var(--gray);
+    padding-right: 10px;
+}
+.idea_info #adhesions
+{
+    color: var(--blue);
+    padding-left: 10px;
+}
+
+.idea_content
+{
+    word-wrap:break-word;
+}
+#adherer
+{
+    height: 50px;
+    width: 110px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: var(--border-01);
+
+    color: var(--blue);
+    background: white;
+    box-shadow: none;
+
+    margin-bottom: 100px;
+    margin-top: 20px;
+
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+#adherer:hover
+{
+    color: var(--white);
+    background-color: var(--blue);
+    box-shadow: var(--shdw-btn);
+    border: none;
+}
+#adherer:active
+{
+    box-shadow: none;
+}
+
+}
+
+.share {
+    display: none;
+}

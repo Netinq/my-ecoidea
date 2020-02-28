@@ -1,0 +1,125 @@
+
+.disable {
+  display: none;
+}
+
+.main a {
+  border-bottom: 1px solid #aaa;
+}
+.main a:hover {
+  border-bottom: 1px solid var(--green);
+  color: black;
+}
+
+.main {
+  position: relative;
+  height: auto;
+  width: 30vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  margin-top: 20vh;
+
+  transition: 0.4s;
+  border-radius: 10px;
+
+  text-align: center;
+  align-items:center;
+  padding: 3vh;
+}
+
+.main:hover {
+  box-shadow: #aaa 0px 0px 10px;
+}
+
+.login {
+  min-height: 52vh;
+}
+
+.register {
+  min-height: 64vh;
+}
+
+
+
+.feed {
+  display:grid;
+}
+
+.feed input {
+  box-sizing: border-box;
+  position: relative;
+
+
+  top: 0vh;
+  left: calc( (30vw - 20vw ) / 2 );
+
+}
+input:focus {
+  outline: none;
+}
+
+.login .flow{
+  margin-top: 4vh;
+}
+.register .flow{
+  margin-top: 2.5vh;
+}
+
+.flow {
+  width: 20vw;
+  height: 6.5vh;
+
+  font-size: 2vmin;
+
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+
+  background: none;
+
+  border-radius: 27px;
+  border: none;
+  border: 1px solid #aaa;
+
+
+
+  transition: 0.4s;
+  font-family: 'Roboto', sans-serif;
+}
+.flow:hover {
+
+  border:  2px solid var(--green);
+  color: var(--green);
+}
+
+.empty {
+  border:  2px solid var(--red);
+}
+.valid {
+  border:  2px solid var(--green);
+}
+
+.err {
+  margin-top: 0.5vh;
+  color: var(--red);
+  font-size: 1em;
+}
+span {
+  margin-top: 1vh;
+}
+
+#remember {
+  position: relative;
+  margin-top: 4vh;
+}
+#cguConfirm {
+  position: relative;
+  margin-top: 2vh;
+}
+
+label {
+  display: block;
+  text-align: none;
+  padding: none;
+}
